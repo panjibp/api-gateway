@@ -9,6 +9,6 @@ module.exports = async (req, res, next) => {
         }
 
         req.user = decoded;
-        return next;
+        return next();
     });
 }
